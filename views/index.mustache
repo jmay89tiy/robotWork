@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Index Mustache</title>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+
+    <h1 class="Snagabot"><font color="#CF5300">Snag-A-Bot</font>
+    </h1>
+
+
+    <div class="users">
+      {{#users}}
+
+      <a href="{{id}}"><div class="single-user">
+        <div class="avatar">
+          <img src="{{avatar}}">
+          <!--  { regular mustaches mean it targets just that piece} -->
+        </div>
+
+        <h3>{{name}}</h3>
+
+        <p id="location">
+          {{#address.city}}
+          <!-- any time hash tag is used it means loop -->
+            {{address.city}}, {{address.country}}
+            <!-- one bar above  -->
+          {{/address.city}}
+          <!-- everything is closed out here using the '/' -->
+          {{^address.city}}
+          <!-- ^ this means "not" i.e. similiar to if not then xxx -->
+            {{address.country}}
+            <!-- one bar above -->
+          {{/address.city}}
+          {{#job}}
+            {{job}}, {{company}}
+          {{/job}}
+          {{^job}}
+            <font color="#CF5300"><br>Available for hire.</br></font>
+            <!-- example above means if no job, then he's for hire -->
+          {{/job}}
+        </p>
+      </div>
+    </a>
+
+    <!-- this starts the bottom section  -->
+
+      {{/users}}
+    </div>       <!-- this ends users here -->
+  </body>
+</html>

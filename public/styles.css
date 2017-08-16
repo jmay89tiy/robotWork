@@ -1,0 +1,62 @@
+/**{
+  box-sizing: border-box;
+};*/
+
+.Snagabot {
+  text-align:center;
+  font-size:60px;
+  font-family: 'Muli', sans-serif;
+
+}
+.users{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: 'Muli', sans-serif;
+}
+
+#location {
+  text-align:center;
+  color:gray;
+}
+
+a{
+  width: 20%;
+  border: 1px solid gray;
+  text-align: left;
+  align-items: center;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.single-user img{
+  width: 75%;
+}
+
+.single-user p{
+  margin-left: 10px;
+  margin-top: -20px;
+}
+
+.avatar {
+  height: 140px;
+  justify-content: center;
+}
+
+
+h3 {
+  text-align: center;
+  margin-bottom:0px 0px 10px 0px;
+  font-size:30px;
+}
+
+.dataUser {
+
+
+}
+.dataUserHead {
+  font-size: 25px;
+  color: black;
+  text-align:left;
+}
