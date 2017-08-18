@@ -40,18 +40,6 @@ app.get('/', function(req, res) {
       res.render('indexRobot', chosenRobot)
       });
 
-//       app.get('/kittehs/:id', function (request, response) {
-//   const chosenKitty = kittyDal.getKitty(request.params.id)
-//   if (chosenKitty.id) {
-//     response.render('kittyDetail', chosenKitty)
-//   } else {
-//     response.send('NO KITTEHS!!!')
-//   }
-// })
-
-      // above pulls individual
-
-
       app.listen(3000, function() {
         console.log('Application has started at port 3000')
       });
