@@ -60,3 +60,67 @@ h3 {
   color: black;
   text-align:left;
 }
+
+.robot {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+
+}
+a {
+
+  height:1px;
+  width:1px;
+}
+
+.leftSide {
+  display:flex;
+  flex-direction:column;
+}
+
+.leftSide p {
+  color:orange;
+  font-size:25px;
+}
+
+.rightSide {
+  display:flex
+  flex-direction:column;
+}
+
+
+.rightSide h4 {
+  font-size:70px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+.avatarCircle {
+  border-radius: 100px;
+  border: 1px solid gray;
+  margin-right:30px;
+  width:150px;
+  padding:30px;
+}
+
+.uniSkills {
+  margin-top:-75px;
+  font-size:25px;
+  color:purple;
+}
+
+.eduLabel {
+  text-align: right;
+padding-right: 20px;
+}
+
+.skillsLabel {
+  text-align: right;
+padding-right: 20px;
+}
+
+.locale {
+  font-size:20px;
+  margin-bottom:120px;
+}
