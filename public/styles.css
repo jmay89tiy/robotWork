@@ -6,8 +6,19 @@
   text-align:center;
   font-size:60px;
   font-family: 'Muli', sans-serif;
-
 }
+
+.links {
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+color:blue;
+justify-content:center;
+font-size:20px;
+background-color:orange;
+font-family: 'Muli', sans-serif;
+}
+
 .users{
   display: flex;
   flex-direction:row;
@@ -56,6 +67,13 @@ h4 {
   text-align:center;
 }
 
+.hireMe {
+  font-size:60px;
+  color:orange;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+}
+
 
 }
 .dataUserHead {
@@ -67,7 +85,8 @@ h4 {
 .robot {
   display:flex;
   flex-wrap:wrap;
-  justify-content:center;
+  justify-content:flex-start;
+  margin-bottom: 75px;
 
 }
 
